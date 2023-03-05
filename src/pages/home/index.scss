@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.index {
+  flex: 1;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80;
+  background-color: $color-brand;
+  &-title {
+    color: #ffffff;
+    font-size: $font-size-xl;
+  }
+}
+
+.info {
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  &-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-bottom: $spacing-v-xl;
+  }
+  &-text {
+    text-align: left;
+    font-size: $font-size-base;
+    color: $color-text-paragraph;
+    line-height: 40px;
+    font-family: 'Outfit-Regular'; // 兼容 Android 与 iOS，不设置 font weight
+  }
+}
+
+.load {
+  padding: 30px;
+  &-header {
+    flex-direction: row;
+    &-input {
+      flex: 1;
+      border-bottom-color: #dedede;
+      border-bottom-width: 1px;
+      margin-right: 10px;
+    }
+    &-icon {
+      height: 60px;
+      width: 60px;
+      /*  #ifdef rn */
+      tint-color: $color-brand;
+      /*  #endif  */
+    }
+  }
+  &-btn {
+    margin: 40px 0;
+    background-color: $color-brand;
+  }
+}
+
+.statement {
+  padding: 20px 30px;
+  &-text{
+    color: $color-grey-2;
+    font-size: 22px;
+  }
+}
